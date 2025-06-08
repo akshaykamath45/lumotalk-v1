@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LumoTalk Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 15%;
+
+    --primary: 208 87% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 208 15% 96%;
+    --secondary-foreground: 208 25% 25%;
+
+    --muted: 208 15% 96%;
+    --muted-foreground: 208 10% 45%;
+
+    --accent: 208 15% 96%;
+    --accent-foreground: 208 25% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 208 15% 91%;
+    --input: 208 15% 91%;
+    --ring: 208 87% 40%;
+
+    --radius: 0.75rem;
+
+    --lumo-50: 208 67% 97%;
+    --lumo-100: 208 67% 94%;
+    --lumo-200: 208 67% 87%;
+    --lumo-300: 208 67% 80%;
+    --lumo-400: 208 67% 73%;
+    --lumo-500: 208 87% 40%;
+    --lumo-600: 208 87% 35%;
+    --lumo-700: 208 87% 30%;
+    --lumo-800: 208 87% 22%;
+    --lumo-900: 208 87% 14%;
+    --lumo-950: 208 87% 7%;
+  }
+
+  .dark {
+    --background: 208 87% 7%;
+    --foreground: 208 15% 90%;
+
+    --card: 208 87% 7%;
+    --card-foreground: 208 15% 90%;
+
+    --popover: 208 87% 7%;
+    --popover-foreground: 208 15% 90%;
+
+    --primary: 208 67% 80%;
+    --primary-foreground: 208 87% 7%;
+
+    --secondary: 208 25% 15%;
+    --secondary-foreground: 208 15% 85%;
+
+    --muted: 208 25% 15%;
+    --muted-foreground: 208 10% 55%;
+
+    --accent: 208 25% 15%;
+    --accent-foreground: 208 15% 85%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 208 25% 15%;
+    --input: 208 25% 15%;
+    --ring: 208 67% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .text-lumo-500 {
+    color: hsl(var(--lumo-500));
+  }
+  .bg-lumo-500 {
+    background-color: hsl(var(--lumo-500));
+  }
+  .bg-lumo-50 {
+    background-color: hsl(var(--lumo-50));
+  }
+  .bg-lumo-100 {
+    background-color: hsl(var(--lumo-100));
+  }
+  .border-lumo-200 {
+    border-color: hsl(var(--lumo-200));
+  }
+  .hover\:bg-lumo-600:hover {
+    background-color: hsl(var(--lumo-600));
+  }
+}
